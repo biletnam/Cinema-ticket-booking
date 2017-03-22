@@ -44,6 +44,7 @@ namespace Sinemav1
                 case "İstanbulKirmizisi":
                     MessageBox.Show(istanbulKirmizisi, "İstanbul Kırmızısı Filminin Özeti", MessageBoxButtons.OK);
                     break;
+                    /*/*/
             }
         }
     }

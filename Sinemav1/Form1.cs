@@ -16,112 +16,115 @@ namespace Sinemav1
         {
             InitializeComponent();
         }
+
+        Form3 ozet = new Form3();
+        Form2 rez = new Form2();
+        Gosterim gos = new Gosterim();
+
         #region FilmÖzetButonEvents
-        FilmOzet deneme = new FilmOzet();
         private void btnOzet1_Click(object sender, EventArgs e)
         {
-            deneme.Text = "Logan";
-            deneme.VideoUrl("HA_qEsrQvr4");
-            deneme.Yonetmen("James Mangold");
-            deneme.Oyuncular("Doris Morgado", "Boyd Holbrook", "Patrick Stewart", "Dafne Keen", "Hugh Jackman");
-            deneme.Sure("137 Dakika");
-            deneme.Tip("Aksiyon");
-            deneme.Ozet(Gosterim.logan);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[1];
+            ozet.VideoUrl("HA_qEsrQvr4");
+            ozet.Yonetmen("James Mangold");
+            ozet.Oyuncular("Doris Morgado", "Boyd Holbrook", "Patrick Stewart", "Dafne Keen", "Hugh Jackman");
+            ozet.Sure("137 Dakika");
+            ozet.Tip("Aksiyon");
+            ozet.Ozet(gos.logan);
+            ozet.ShowDialog();
         }
 
         private void btnOzet2_Click(object sender, EventArgs e)
         {
-            deneme.Text = "Yaşam Kürü";
-            deneme.VideoUrl("Fxos0387Bo8");
-            deneme.Yonetmen("Gore Verbinski");
-            deneme.Oyuncular("Mia Goth", "Jason Isaacs", "Dane Dehaan");
-            deneme.Sure("146 Dakika");
-            deneme.Tip("Gizem");
-            deneme.Ozet(Gosterim.yasamKuru);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[2];
+            ozet.VideoUrl("Fxos0387Bo8");
+            ozet.Yonetmen("Gore Verbinski");
+            ozet.Oyuncular("Mia Goth", "Jason Isaacs", "Dane Dehaan");
+            ozet.Sure("146 Dakika");
+            ozet.Tip("Gizem");
+            ozet.Ozet(gos.yasamKuru);
+            ozet.ShowDialog();
         }
 
         private void btnOzet3_Click(object sender, EventArgs e)
         {
-            deneme.Text = "Bu Dünyanın Dışında";
-            deneme.VideoUrl("nHMa3wVPT0U");
-            deneme.Yonetmen("Peter Chelsom");
-            deneme.Oyuncular("Carla Gugino", "Asa Butterfield", "Britt Robertson", "Gary Oldman");
-            deneme.Sure("120 Dakika");
-            deneme.Tip("Bilim Kurgu");
-            deneme.Ozet(Gosterim.buDunyaninDisinda);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[3];
+            ozet.VideoUrl("nHMa3wVPT0U");
+            ozet.Yonetmen("Peter Chelsom");
+            ozet.Oyuncular("Carla Gugino", "Asa Butterfield", "Britt Robertson", "Gary Oldman");
+            ozet.Sure("120 Dakika");
+            ozet.Tip("Bilim Kurgu");
+            ozet.Ozet(gos.buDunyaninDisinda);
+            ozet.ShowDialog();
         }
 
         private void btnOzet4_Click(object sender, EventArgs e)
         {
-            deneme.Text = "Deli Aşk";
-            deneme.VideoUrl("hK9-cgPAp4w");
-            deneme.Yonetmen("Murat Kaman");
-            deneme.Oyuncular("Emrah Kaman", "Cem Yılmaz", "Şafak Pekdemir", "Pelin Akil", "Zafer Algöz");
-            deneme.Sure("104 Dakika");
-            deneme.Tip("Komedi");
-            deneme.Ozet(Gosterim.deliAsk);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[4];
+            ozet.VideoUrl("hK9-cgPAp4w");
+            ozet.Yonetmen("Murat Kaman");
+            ozet.Oyuncular("Emrah Kaman", "Cem Yılmaz", "Şafak Pekdemir", "Pelin Akil", "Zafer Algöz");
+            ozet.Sure("104 Dakika");
+            ozet.Tip("Komedi");
+            ozet.Ozet(gos.deliAsk);
+            ozet.ShowDialog();
         }
 
         private void btnOzet5_Click(object sender, EventArgs e)
         {
             
-            deneme.Text = "Güzel ve Çirkin";
-            deneme.VideoUrl("lAxRNwyKRtg");
-            deneme.Yonetmen("Bill Condon");
-            deneme.Oyuncular("Emma Watson", "Dan Stevens", "Luke Evans");
-            deneme.Sure("129 Dakika");
-            deneme.Tip("Fantastik");
-            deneme.Ozet(Gosterim.guzelCirkin);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[5];
+            ozet.VideoUrl("lAxRNwyKRtg");
+            ozet.Yonetmen("Bill Condon");
+            ozet.Oyuncular("Emma Watson", "Dan Stevens", "Luke Evans");
+            ozet.Sure("129 Dakika");
+            ozet.Tip("Fantastik");
+            ozet.Ozet(gos.guzelCirkin);
+            ozet.ShowDialog();
         }
 
         private void btnOzet6_Click(object sender, EventArgs e)
         {
-            deneme.Text = "Tatlım Tatlım";
-            deneme.VideoUrl("Re6xZPyhuZM");
-            deneme.Yonetmen("Yılmaz Erdoğan");
-            deneme.Oyuncular("Çağlar Çorumlu", "Büşra Pekin", "Gupse Özay", "Şebnem Bozoklu", "Aylin Kontente");
-            deneme.Sure("100 Dakika");
-            deneme.Tip("Komedi");
-            deneme.Ozet(Gosterim.tatlimTatlim);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[6];
+            ozet.VideoUrl("Re6xZPyhuZM");
+            ozet.Yonetmen("Yılmaz Erdoğan");
+            ozet.Oyuncular("Çağlar Çorumlu", "Büşra Pekin", "Gupse Özay", "Şebnem Bozoklu", "Aylin Kontente");
+            ozet.Sure("100 Dakika");
+            ozet.Tip("Komedi");
+            ozet.Ozet(gos.tatlimTatlim);
+            ozet.ShowDialog();
         }
 
         private void btnOzet7_Click(object sender, EventArgs e)
         {
-            deneme.Text = "Kong";
-            deneme.VideoUrl("cAJaVpUSBuo");
-            deneme.Yonetmen("Jordan Vogt-Roberts");
-            deneme.Oyuncular("Tom Hiddleston", "Brie Larson", "Toby Kebbell");
-            deneme.Sure("118 Dakika");
-            deneme.Tip("Macera");
-            deneme.Ozet(Gosterim.kingKong);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[7];
+            ozet.VideoUrl("cAJaVpUSBuo");
+            ozet.Yonetmen("Jordan Vogt-Roberts");
+            ozet.Oyuncular("Tom Hiddleston", "Brie Larson", "Toby Kebbell");
+            ozet.Sure("118 Dakika");
+            ozet.Tip("Macera");
+            ozet.Ozet(gos.kingKong);
+            ozet.ShowDialog();
         }
 
         private void btnOzet8_Click(object sender, EventArgs e)
         {
-            deneme.Text = "İstanbul Kırmızısı";
-            deneme.VideoUrl("uQhsbHpHY8A");
-            deneme.Yonetmen("Ferzan Özpetek");
-            deneme.Oyuncular("Halit Ergenç", "Zerrin Tekindor", "Mehmet Günsür", "Tuba Büyüküstün", "Nejat İşler");
-            deneme.Sure("114 Dakika");
-            deneme.Tip("Dram");
-            deneme.Ozet(Gosterim.istanbulKirmizisi);
-            deneme.ShowDialog();
+            ozet.Text = gos.salonFilmIsim[8];
+            ozet.VideoUrl("uQhsbHpHY8A");
+            ozet.Yonetmen("Ferzan Özpetek");
+            ozet.Oyuncular("Halit Ergenç", "Zerrin Tekindor", "Mehmet Günsür", "Tuba Büyüküstün", "Nejat İşler");
+            ozet.Sure("114 Dakika");
+            ozet.Tip("Dram");
+            ozet.Ozet(gos.istanbulKirmizisi);
+            ozet.ShowDialog();
         }
         #endregion
 
-
-        FormKoltuk rez = new FormKoltuk();
+        #region BiletAlmaFormGeçiş
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rez.FilmDetay("Logan", 1, "09:45", "12:20", "15:15", "18:10", "21:10");
+            rez.FilmDetay(gos.salonFilmIsim[1], gos.loganSalonNo, gos.loganSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -130,7 +133,7 @@ namespace Sinemav1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rez.FilmDetay("Yaşam Kürü", 2, "11:00", "14:30", "16:30", "18:00", "21:30");
+            rez.FilmDetay(gos.salonFilmIsim[2], gos.yasamkuruSalonNo, gos.yasamkuruSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -139,7 +142,7 @@ namespace Sinemav1
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();            
-            rez.FilmDetay("Bu Dünyanın Dışında", 3, "11:10", "13:50", "16:25", "19:00", "21:35");
+            rez.FilmDetay(gos.salonFilmIsim[3], gos.budunyanindisindaSalonNo, gos.budunyanindisindaSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -148,7 +151,7 @@ namespace Sinemav1
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rez.FilmDetay("Deli Aşk", 4, "10:15", "12:15", "14:40", "17:00", "19:20", "21:40");
+            rez.FilmDetay(gos.salonFilmIsim[4], gos.deliaskSalonNo, gos.deliaskSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -157,7 +160,7 @@ namespace Sinemav1
         private void button9_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rez.FilmDetay("Güzel ve Çirkin", 5, "11:00", "13:45", "16:30", "19:15", "22:00");
+            rez.FilmDetay(gos.salonFilmIsim[5], gos.guzelcirkinSalonNo, gos.guzelcirkinSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -166,7 +169,7 @@ namespace Sinemav1
         private void button11_Click(object sender, EventArgs e)
         {
             this.Hide();            
-            rez.FilmDetay("Tatlım Tatlım", 6, "10:30", "12:45", "15:00", "17:20", "19:40", "22:00");
+            rez.FilmDetay(gos.salonFilmIsim[6], gos.tatlimtatlimSalonNo, gos.tatlimtatlimSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -175,7 +178,7 @@ namespace Sinemav1
         private void button13_Click(object sender, EventArgs e)
         {
             this.Hide();            
-            rez.FilmDetay("Kong", 7, "11:00", "13:40", "16:20", "19:00", "21:50");
+            rez.FilmDetay(gos.salonFilmIsim[7], gos.kongSalonNo, gos.kingkongSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
@@ -184,10 +187,17 @@ namespace Sinemav1
         private void button15_Click(object sender, EventArgs e)
         {
             this.Hide();            
-            rez.FilmDetay("İstanbul Kırmızısı", 8, "10:50", "13:25", "16:10", "18:50", "21:30");
+            rez.FilmDetay(gos.salonFilmIsim[8], gos.istanbulkirmizisiSalonNo, gos.istanbulkirmizisiSeans);
             rez.ShowDialog();
             rez.cbTemizle();
             this.Show();
+        }
+        #endregion
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Doğan Akdeniz\nHasan Can Büyükaşık\nDemir Berk Sever", "Hazırlayanlar");
         }
     }
 }

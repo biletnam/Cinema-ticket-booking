@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Sinemav1
 {
     class Bilet
     {
         private string ad, soyad, tcNo, cinsiyet;
+        private static double fiyatTam = 17.00;
+        private static double hizmetBedeli = 1.75;
+        public static int say;
         public string Ad
         {
             get { return ad; }
@@ -29,17 +27,45 @@ namespace Sinemav1
         {
             get { return cinsiyet; }
             set { cinsiyet = value; }
-        }
-        public void BilgiYazdir(ListBox x)
+        }        
+        public double FiyatTam
         {
-            string koltukNo =" ";
+            get
+            {
+                return fiyatTam;
+            }
+            private set
+            {
+
+            }
+        }
+        public double HizmetBedeli
+        {
+            get
+            {
+                return hizmetBedeli;
+            }
+            private set
+            {
+
+            }
+        }
+        public void BilgiYazdir(string kod,ListBox x)
+        {
+            say = x.Items.Count;
+            İndirimliBilet ib = new İndirimliBilet();
+            
+            string koltukNo = "";
             for (int i = 0; i < x.Items.Count; i++)
             {
                 koltukNo += x.Items[i];
                 if (x.Items.Count - 1 != i)
                     koltukNo += ", ";
             }
-            MessageBox.Show("Ad : "+ad+"\n"+"Soyad :"+soyad + "\n" + "Cinsiyet : "+cinsiyet + "\n" +"TC No : "+ tcNo + "\n" + "Koltuk No : " + koltukNo ,"Rezervasyon Gerçekleştirildi!",MessageBoxButtons.OK);
+            string[] veri = { ad, soyad, cinsiyet, tcNo, koltukNo, ib.İndirimMiktari(kod).ToString("F2") , hizmetBedeli.ToString(), (ib.İndirimMiktari(kod) +hizmetBedeli).ToString("F2") };
+            Form4 fm4 = new Form4();
+            fm4.Data(veri);
+            fm4.ShowDialog();
             x.Items.Clear();
         }
     }

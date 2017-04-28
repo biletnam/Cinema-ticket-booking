@@ -53,6 +53,7 @@
             this.btnOzet7 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.btnOzet8 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogan
@@ -429,12 +430,28 @@
             this.btnOzet8.UseVisualStyleBackColor = false;
             this.btnOzet8.Click += new System.EventHandler(this.btnOzet8_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(892, 864);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Hazırlayanlar";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(957, 876);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.btnOzet8);
             this.Controls.Add(this.button13);
@@ -460,11 +477,15 @@
             this.Controls.Add(this.btnYasamKuru);
             this.Controls.Add(this.btnLogan);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(973, 915);
             this.MinimumSize = new System.Drawing.Size(973, 915);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lütfen Bir Film Seçin";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -494,6 +515,7 @@
         private System.Windows.Forms.Button btnOzet7;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button btnOzet8;
+        private System.Windows.Forms.Label label1;
     }
 }
 
